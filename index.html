@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather Explorer</h1>
+
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter city or use your location">
+            <button id="search-btn">Search</button>
+            <button id="location-btn">Use My Location</button>
+        </div>
+
+        <div class="weather-card">
+            <div class="weather-info">
+                <h2 class="city-name">City Name</h2>
+                <img src="" alt="Weather Icon" class="weather-icon">
+                <h3 class="temperature">--°C</h3>
+                <p class="description">Weather Description</p>
+            </div>
+
+            <div class="additional-info">
+                <p>🌬️ Wind Speed: <span id="wind-speed">-- km/h</span></p>
+                <p>💧 Humidity: <span id="humidity">--%</span></p>
+                <p>🌅 Sunrise: <span id="sunrise">--:-- AM</span></p>
+                <p>🌇 Sunset: <span id="sunset">--:-- PM</span></p>
+                <p>👁️ Visibility: <span id="visibility">-- km</span></p>
+                <p>🌧️ Rainfall: <span id="rainfall">-- mm</span></p>
+                <div id="alert-box" class="alert-box hidden">
+                    <p>⚠️ Extreme Weather Alert!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
